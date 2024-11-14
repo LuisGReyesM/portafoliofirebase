@@ -2,18 +2,25 @@
   <div class="footer bg-secondary py-3">
     <div class="container text-white">
       <div class="row justify-content-center">
-        <router-link class="nav-link col-3 text-center" to="#">
+
+        <a href="https://www.instagram.com/oblibium/" class="nav-link col-3 text-center" target="_blank"
+          rel="noopener noreferrer">
           <i class="fab fa-instagram"></i>
           <span class="d-block">Instagram</span>
-        </router-link>
-        <router-link class="nav-link col-3 text-center" to="#">
+        </a>
+
+        <a href="https://www.facebook.com/Oblivium" class="nav-link col-3 text-center" target="_blank"
+          rel="noopener noreferrer">
           <i class="fab fa-facebook-f"></i>
           <span class="d-block">Facebook</span>
-        </router-link>
-        <router-link class="nav-link col-3 text-center" to="#">
+        </a>
+
+        <a href="https://www.linkedin.com/in/luisreyesmiranda/" class="nav-link col-3 text-center" target="_blank"
+          rel="noopener noreferrer">
           <i class="fab fa-linkedin-in"></i>
           <span class="d-block">LinkedIn</span>
-        </router-link>
+        </a>
+
         <router-link class="nav-link col-3 text-center" to="/contacto">
           <i class="fas fa-envelope"></i>
           <span class="d-block">Contacto</span>
@@ -25,7 +32,7 @@
 
 <script>
 export default {
-  
+
 }
 </script>
 

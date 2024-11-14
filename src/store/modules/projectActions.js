@@ -10,14 +10,10 @@ export const actions = {
 
       const db = getDb();
      
-      const projectsCollection = collection(db, 'project');
-   
-      const projectsSnapshot = await getDocs(projectsCollection);
-      
+      const projectsCollection = collection(db, 'project');   
+      const projectsSnapshot = await getDocs(projectsCollection); 
 
-      console.log('Snapshot de proyectos:', projectsSnapshot);
-      console.log('Proyectos docs:', projectsSnapshot.docs);
-
+    
       // Mapea los documentos para obtener los datos y asignarles un id
       const projectsList = projectsSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
 
